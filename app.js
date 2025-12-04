@@ -15,4 +15,6 @@ import routerChamado from "./routes/chamados.js" //importa as rotas de tarefas
 app.use("/usuario", routerUsuario) //Define a rota /usuario para as rotas de usuário
 app.use("/chamado", routerChamado)
 
-app.listen(3000, () => {console.log("Servidor rodando na porta 3000🚀")}) //inicia o servidor na porta 3000
+app.listen(PORT, () => {
+    console.log(`Servidor rodando na porta ${PORT} 🚀`);
+  });
